@@ -29,9 +29,7 @@
 
         .flex-container {
             display: flex;
-            background-color: #016A6A;
             justify-content: space-around;
-            padding: 20px;
         }
 
         .header-title {
@@ -53,6 +51,59 @@
             font-size: 16px;
         }
 
+        .column1 {
+            background-color: #006A6A;
+            width: 50%;
+            padding: 20px;
+            color: #E9E9E9;
+
+        }
+        .column2 {
+            background-color: #019C9B;
+            width: 50%;
+            padding: 20px;
+            color: #E9E9E9;
+        }
+
+        .column1-line1 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .column1-line2 {
+            margin-top: 10px;
+        }
+
+        .price {
+            font-weight:700 ;
+            font-size: 24px;
+        }
+        .month {
+            font-style: italic;
+            font-size: 14px;
+            margin-left: 14px;
+        }
+        
+        .column1-line3 {
+            font-size: 14px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 18px 32px;
+            font-size: 16px;
+            color: #006969;
+            border-radius: 6px;
+            border: none;
+            margin-top: 26px;
+
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color:hsl(180, 100%, 84%);
+        }
+
+
     </style>
 </head>
 <body>
@@ -70,10 +121,22 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="column1">
+                <div class="column1-line1">
+                    Assinatura mensal:
+                </div>
+                <div class="column1-line2">
+                        <span class="price">R$ 99,99</span>
+                        <span class="month">por mês.</span>
+                </div>
+                <div class="column1-line3">
+                    Cancele a qualquer momento
+                </div>
+                <div>
+                    <button class="button">Assine Agora</button>
+                </div>
             </div>
-            <div>
+            <div class="column2">
                 Coluna 2
             </div>
         </div>
