@@ -1,0 +1,130 @@
+        body {
+            background-color: #F4F4F4;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+
+        .container {
+            background-color: #E9E9E9;
+            margin: auto ;
+            width: 600px;
+            box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .coluna1 {
+            background-color: #006969;
+        }
+
+        .header {
+            padding: 2.5rem;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-title {
+            color: #006A6A;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+
+        .header-line1 {
+            color: #019C9B;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .header-line2 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .column1 {
+            background-color: #006A6A;
+            width: 50%;
+            padding: 1.25rem;
+            color: #E9E9E9;
+
+        }
+        .column2 {
+            background-color: #019C9B;
+            width: 50%;
+            padding: 1.25rem;
+            color: #E9E9E9;
+        }
+
+        .column1-line1 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .column1-line2 {
+            margin-top: 0.6rem;
+        }
+
+        .price {
+            font-weight:700 ;
+            font-size: 1.5rem;
+        }
+        .month {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-left: 0.9rem;
+        }
+        
+        .column1-line3 {
+            font-size: 0.9rem;
+        }
+
+        .button {
+            width: 100%;
+            padding: 1.1rem 2rem;
+            font-size: 1rem;
+            color: #006969;
+            border-radius: 0.4rem;
+            border: none;
+            margin-top: 1.6rem;
+
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color:hsl(180, 100%, 84%);
+        }
+
+        .column2-title {
+            margin: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .column2-image {
+            margin: 1rem;
+            text-align: center;
+        }
+
+        .column2-list {
+            font-size: 0.9rem;
+            margin-left: 0.6rem;
+        }
+
+        @media screen and (max-width: 620px){
+            html{
+                font-size: 12px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .column1, .column2 {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container {
+            width: 90%;
+        }
+        }
